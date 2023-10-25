@@ -1,5 +1,3 @@
-.Express/node_modules
-.Express/images.jpg
-*.node_modules
-*.images.jpg
-*.Express/node_modules
+
+*.env
+*node_modules
