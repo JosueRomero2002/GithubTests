@@ -1,2 +1,3 @@
 .Express/node_modules
 .Express/images.jpg
+*.node_modules
