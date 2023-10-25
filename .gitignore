@@ -2,3 +2,4 @@
 .Express/images.jpg
 *.node_modules
 *.images.jpg
+*.Express/node_modules
