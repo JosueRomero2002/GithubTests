@@ -7,12 +7,11 @@ const usersRoutes = require("./routes/users.route");
 
 app.use(express.json());
 
-mongoose.connect(
-  "mongodb+srv://josuepinro21:Duque2014@vcluster.vojvt69.mongodb.net/",
-  {
-    useNewUrlParser: true,
-  }
-);
+require("dotenv").config(); // .env
+
+mongoose.connect(process.env.MONGODB_URL, {
+  useNewUrlParser: true,
+});
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
