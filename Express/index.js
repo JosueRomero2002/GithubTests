@@ -5,6 +5,7 @@ var mongoose = require("mongoose");
 
 const usersRoutes = require("./routes/users.route");
 const usersStudents = require("./routes/students.route");
+const Ingredients_Routes = require("./routes/ingredients.route");
 
 app.use(express.json());
 
@@ -24,6 +25,7 @@ app.get("/Marco", (req, res) => {
 
 app.use("/users", usersRoutes);
 app.use("/students", usersStudents);
+app.use("/ingredients", Ingredients_Routes);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
