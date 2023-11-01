@@ -21,6 +21,6 @@ var MenuSchema = new Schema({
   },
 });
 
-var MenuModel = mongoose.model("Pizzas", MenuSchema);
+var MenuModel = mongoose.model("Menu", MenuSchema);
 
 module.exports = MenuModel;

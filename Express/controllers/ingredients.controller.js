@@ -67,8 +67,8 @@ const updateIngredient = async (req, res, next) => {
 };
 const deleteIngredient = async (req, res, next) => {
   try {
-    IngredientsModel.deleteOne({ sku: req.params.sku });
-    res.status(200).json({ msg: "Ingredient Deleted!!" });
+    const response = await IngredientsModel.deleteOne({ sku: req.params.sku });
+    res.status(200).json({ msg: "Ingredient Deleted!!", data: response });
   } catch (error) {
     return res.status(500).json({ msg: "Ups! Error " + error });
   }

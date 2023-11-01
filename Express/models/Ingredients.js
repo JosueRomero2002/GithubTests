@@ -28,6 +28,6 @@ var IngredientsSchema = new Schema({
   },
 });
 
-var IngredientsModel = mongoose.model("Pizzas", IngredientsSchema);
+var IngredientsModel = mongoose.model("Ingredients", IngredientsSchema);
 
 module.exports = IngredientsModel;
